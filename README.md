@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://udaceue.github.io/NFT-preview-card-component/)
+- Live Site URL: [Check Here](https://udaceue.github.io/NFT-preview-card-component/)
 
 ## My process
 
