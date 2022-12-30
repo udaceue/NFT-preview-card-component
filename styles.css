@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --PrimaryBlue: hsl(215, 51%, 70%);
+    --PrimiaryCyan: hsl(178, 100%, 50%);
+    --PrimaryDarkBlue: hsl(217, 54%, 11%);
+    --SecondaryDarkBlue: hsl(216, 50%, 16%);
+    --TertiaryDarkBlue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--PrimaryDarkBlue);
+}
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cardsContainer{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nftCard{
+    max-width: clamp(335px,70vw,380px);
+    min-height: clamp(180px, 85vh, 650px);
+    background-color: var(--SecondaryDarkBlue);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: clamp(1rem, 1.3rem, 1.5rem);
+    padding-right: clamp(1rem, 1.3rem, 1.5rem);
+    padding-top: clamp(1rem, 1.3rem, 1.5rem)
+
+}
+.nftImage> img{ 
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.7rem;
+}
+.nftImageOverlay{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: aqua;
+    opacity: 0;
+    transition: .5s ease;
+}
+.nftImageOverlay:hover{
+    opacity: 0.3;
+}
+.nftImage{
+    max-height: 390px;
+    position: relative;
+}
+
+.nftName{
+    min-width: 100%;
+    font-size: 0.9rem;
+}
+.nftName > h1{
+    margin-top: clamp(0.6rem, 0.2rem + 0.9vw, 1.5rem);
+    font-weight: 600;
+    color: var(--White);
+}
+.nftName > h1:hover{
+    color: var(--PrimiaryCyan);
+    cursor: pointer;
+}
+.nftDescription > p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    color: var(--PrimaryBlue);
+}
+.nftInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+.cost{
+    color: var(--PrimiaryCyan);
+}
+.expiration{
+    color: var(--PrimaryBlue);
+}
+.nfcCreator{
+    display: flex;
+    align-items: flex-end;
+    min-width: 100%;
+    margin-top: 1.2rem;
+    padding: 0.8rem 0rem;
+    border-top: solid var(--TertiaryDarkBlue) 2px;
+}
+.nfcAuthor{
+    margin: 0.7rem;
+    opacity: 0.8;
+    color: var(--PrimaryBlue);
+}
+.nfcAuthorAvatar{
+    max-width: clamp(2rem, 2rem + 1vw, 3rem);
+}
+.nfcAuthorAvatar > img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.nfcAuthor > span {
+    color: var(--PrimiaryCyan)
+}
+.nfcAuthor > span:hover {
+    cursor: pointer;
+}
+
+footer{
+    justify-self: flex-end;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

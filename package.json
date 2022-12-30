@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/udaceue/NFT-preview-card-component/issues"
   },
-  "homepage": "https://github.com/udaceue/NFT-preview-card-component#readme"
+  "homepage": "https://github.com/udaceue/NFT-preview-card-component#readme",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
 }
